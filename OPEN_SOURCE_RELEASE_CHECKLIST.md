@@ -18,15 +18,17 @@ This checklist tracks whether SecureCheck is ready to submit as a Codex for Open
 - [x] Add issue templates for false positives and new scanner rules.
 - [x] Add Chrome Web Store submission notes.
 - [x] Add a public privacy policy repository.
+- [x] Add demo screenshots for scan start, progress, results, and copy-prompt workflow.
+- [x] Add one example scan report using fictional `.example` data.
+- [x] Add release notes for the first public OSS release.
+- [x] Publish a GitHub release tag for the first public OSS release.
 - [x] Confirm no secrets, private API tokens, customer data, or unreleased sensitive data are committed.
 - [x] Ignore `.DS_Store`, packaged extension zips, build artifacts, and local secrets.
 
 ## Still Recommended Before Applying
 
 - [x] Rename the GitHub repository from `security-scanner` to `securecheck-ai-web-scanner`.
-- [ ] Add screenshots or a short demo GIF showing scan results and the "Copy All Issues for AI" workflow.
 - [ ] Add one example vulnerable fixture page per scanner category.
-- [ ] Add one example scan report for an AI-built website.
 - [ ] Add extension packaging instructions and a release zip workflow.
 - [ ] Enable GitHub Pages for the privacy policy if Chrome Web Store rejects the GitHub repository URL.
 - [x] Add short public roadmap issues to show active maintenance:
@@ -49,6 +51,6 @@ Avoid this framing:
 
 ## Current Readiness
 
-Current local project quality: strong concept and real implementation, with a free open-source scanner core, MIT license, contribution/security docs, roadmap, GitHub hygiene, privacy policy, Chrome review notes, and scanner regression tests.
+Current local project quality: strong concept and real implementation, with a free open-source scanner core, MIT license, contribution/security docs, roadmap, GitHub hygiene, privacy policy, Chrome review notes, demo screenshots, example report, release notes, and scanner regression tests.
 
-Current application readiness: medium to strong after the repository is pushed publicly. It becomes stronger with screenshots, demo fixtures, and visible community activity.
+Current application readiness: medium to strong after the repository is pushed publicly. It becomes stronger with demo fixtures, a public release tag, and visible community activity.

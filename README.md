@@ -1,8 +1,28 @@
 # SecureCheck AI Web Scanner
 
+[![CI](https://github.com/Eric4045/securecheck-ai-web-scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/Eric4045/securecheck-ai-web-scanner/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Chrome Extension MV3](https://img.shields.io/badge/Chrome%20Extension-MV3-5e6ad2.svg)](manifest.json)
+
 SecureCheck is a free, open-source Chrome extension for scanning AI-built and vibe-coded websites for browser-visible security risks.
 
 It scans the currently open live site, explains each finding in plain language, and generates copy-ready remediation prompts that builders can paste into Codex, ChatGPT, Claude, Cursor, or another AI coding assistant.
+
+## Demo
+
+The screenshots below use fictional `.example` data and do not contain real scan output, credentials, or user information.
+
+| Start a scan | Scan progress |
+| --- | --- |
+| ![SecureCheck initial scan state](docs/screenshots/initial-state.svg) | ![SecureCheck scan progress](docs/screenshots/scan-progress.svg) |
+
+| Review findings | Copy AI fix prompt |
+| --- | --- |
+| ![SecureCheck results view](docs/screenshots/results-view.svg) | ![SecureCheck copy AI prompt flow](docs/screenshots/copy-ai-prompt.svg) |
+
+Example report: [docs/example-report.md](docs/example-report.md)
+
+Release notes: [docs/release-notes/v1.0.0.md](docs/release-notes/v1.0.0.md)
 
 ## Why This Exists
 
@@ -138,6 +158,8 @@ npm test
 SecureCheck is built for the AI coding ecosystem. It helps people who create websites with AI tools find preventable security mistakes and turn those findings into clear instructions for coding agents.
 
 Good contributions include scanner rules, false-positive fixes, vulnerable fixtures, framework-specific remediation prompts, extension-permission hardening, documentation, and bilingual copy improvements.
+
+For Codex for Open Source reviewers, see [CODEX_OSS_APPLICATION.md](CODEX_OSS_APPLICATION.md).
 
 ## Limitations
 

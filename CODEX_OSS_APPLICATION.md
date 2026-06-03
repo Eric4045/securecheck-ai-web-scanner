@@ -54,13 +54,14 @@ The project contains:
 - MIT license.
 - Contribution guide, security policy, issue templates, CI, and scanner tests.
 - A public privacy policy prepared for Chrome Web Store review.
+- Demo screenshots, example scan report, and public release notes for reviewer visibility.
 
 ## Open Source Plan
 
 The immediate open-source roadmap is:
 
 - Publish and maintain the scanner source publicly.
-- Add screenshots, demo GIFs, and example scan reports.
+- Add more screenshots, demo GIFs, and example scan reports.
 - Expand scanner fixture tests.
 - Add example vulnerable pages for common AI-built website mistakes.
 - Add more framework-specific fix prompts.
@@ -77,7 +78,7 @@ The project can also become a public reference for safe AI-assisted remediation 
 
 SecureCheck is not a full penetration testing tool. It does not test backend authorization, business logic, dependency vulnerabilities, server-side validation, or database permissions. It is a first-pass browser-visible scanner focused on common mistakes and AI-assisted remediation.
 
-The project still needs stronger public proof of usefulness, such as screenshots, example reports, demo fixtures, and outside contributors or issue activity.
+The project still needs stronger public proof of usefulness, such as outside contributors, user feedback, Chrome Web Store usage, and more reproducible vulnerable fixtures.
 
 ## Application Answer Snippet
 

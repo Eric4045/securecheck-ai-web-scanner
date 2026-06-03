@@ -71,50 +71,6 @@
   transition: transform 0.82s cubic-bezier(0.4, 0, 0.15, 1);
 }
 
-.sp-credit-corner {
-  position: absolute; bottom: 14px; right: 16px;
-  display: flex; align-items: center; gap: 6px;
-  opacity: 0;
-  animation: sp-fade 0.4s ease 0.2s forwards;
-}
-.sp-credit-avatar {
-  width: 16px; height: 16px; border-radius: 4px;
-  object-fit: cover; opacity: 0.6;
-}
-.sp-credit-corner span {
-  font-size: 10px; font-weight: 500;
-  color: #2e3a52; letter-spacing: 0.04em;
-}
-
-/* ─── Author Watermark ───────────────────────────────────── */
-.author-badge {
-  display: flex; align-items: center; gap: 6px;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 20px; padding: 4px 10px 4px 5px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  color: var(--text-sub);
-  margin-right: 6px;
-}
-.author-badge:hover {
-  border-color: rgba(139,150,240,0.4);
-  background: rgba(94,106,210,0.1);
-  color: #c0c8f8;
-  transform: scale(1.04);
-  box-shadow: 0 2px 10px rgba(94,106,210,0.15);
-}
-.author-badge:active { transform: scale(0.98); }
-
-.author-badge-avatar {
-  width: 20px; height: 20px; border-radius: 6px;
-  object-fit: cover; flex-shrink: 0;
-}
-.author-badge-text {
-  font-size: 10px; font-weight: 700; letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
 /* ─── Space Grotesk Font ────────────────────────────────── */
 @font-face {
   font-family: 'Space Grotesk';

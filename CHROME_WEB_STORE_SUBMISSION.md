@@ -80,6 +80,13 @@ Permission note:
 The extension requests site permissions only when the user starts a scan, uses them for the scanned origin, and removes them after the scan when possible.
 ```
 
+## Public Review Assets
+
+- README with screenshots: <https://github.com/Eric4045/securecheck-ai-web-scanner>
+- Example scan report: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/example-report.md>
+- Release notes: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/release-notes/v1.0.0.md>
+- Privacy policy: <https://github.com/Eric4045/securecheck-privacy>
+
 ## Review Risk Areas To Watch
 
 - Keep all scan behavior passive.
