@@ -2,7 +2,7 @@
 
 ## Project Guidance
 
-SecureCheck is a Chrome Extension Manifest V3 project for passive browser-visible security scanning of AI-built and vibe-coded websites.
+SecureCheck AI Web Scanner is a Chrome Extension Manifest V3 project for passive browser-visible security scanning of AI-built websites.
 
 Keep changes focused on:
 

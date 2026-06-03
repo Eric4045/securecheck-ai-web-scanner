@@ -14,11 +14,11 @@ Current public repository:
 
 ## Short Description
 
-SecureCheck is a free, open-source Chrome extension that scans AI-built and vibe-coded websites for browser-visible security risks, then generates copy-ready fix prompts for AI coding assistants.
+SecureCheck AI Web Scanner is a free, open-source Chrome extension that scans AI-built websites for browser-visible security risks, then generates copy-ready fix prompts for AI coding assistants.
 
 ## Longer Project Description
 
-SecureCheck is built for developers, founders, students, and non-specialists who use AI coding tools to create and deploy websites quickly. These users often get a working product before they understand basic web security hygiene. SecureCheck gives them a practical first-pass safety review: it scans the active website for common browser-visible risks, explains findings in plain language, and generates targeted AI fix prompts that can be pasted into Codex, ChatGPT, Claude, Cursor, or another coding assistant.
+SecureCheck AI Web Scanner is built for developers, founders, students, and non-specialists who use AI coding tools to create and deploy websites quickly. These users often get a working product before they understand basic web security hygiene. SecureCheck gives them a practical first-pass safety review: it scans the active website for common browser-visible risks, explains findings in plain language, and generates targeted AI fix prompts that can be pasted into Codex, ChatGPT, Claude, Cursor, or another coding assistant.
 
 The scanner checks HTTP security headers, exposed sensitive files and endpoints, cookie flags, frontend secret leakage, mixed content, unsafe DOM insertion patterns, console leakage, external scripts without SRI, token storage in localStorage, and eval usage. It focuses on passive checks that can be performed from the browser without backend credentials, form submission, fuzzing, brute force, or state-changing requests.
 

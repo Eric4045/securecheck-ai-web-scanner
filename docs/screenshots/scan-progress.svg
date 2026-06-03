@@ -25,7 +25,7 @@
     <circle cx="24" cy="27" r="2.5" fill="#c0c8ff"/>
   </g>
   <text x="210" y="130" fill="#f0f3ff" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700">SecureCheck</text>
-  <text x="210" y="148" fill="#8b96f0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">For Vibe Coding</text>
+  <text x="210" y="148" fill="#8b96f0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">AI Web Security</text>
   <g transform="translate(460 246)">
     <circle r="70" fill="none" stroke="#232b3b" stroke-width="2"/>
     <circle r="55" fill="none" stroke="#5e6ad2" stroke-width="5" stroke-dasharray="150 190" stroke-linecap="round"/>

@@ -25,16 +25,16 @@
     <circle cx="24" cy="27" r="2.5" fill="#c0c8ff"/>
   </g>
   <text x="210" y="130" fill="#f0f3ff" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700">SecureCheck</text>
-  <text x="210" y="148" fill="#8b96f0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">For Vibe Coding</text>
+  <text x="210" y="148" fill="#8b96f0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">AI Web Security</text>
   <rect x="695" y="119" width="68" height="26" rx="5" fill="#151a24" stroke="#465166"/>
   <text x="710" y="136" fill="#c0ccd8" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600">EN / ZH</text>
   <rect x="188" y="238" width="536" height="42" rx="8" fill="#1a1e28" stroke="#313849"/>
-  <text x="224" y="265" fill="#a0adc4" font-family="SFMono-Regular, Menlo, monospace" font-size="16">https://vibe-shop.example</text>
-  <text x="248" y="326" fill="#c7d0e1" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="600">Scan your AI-built, vibe-coded site</text>
+  <text x="224" y="265" fill="#a0adc4" font-family="SFMono-Regular, Menlo, monospace" font-size="16">https://demo-app.example</text>
+  <text x="248" y="326" fill="#c7d0e1" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="600">Scan your AI-built website</text>
   <text x="318" y="354" fill="#9aa7ba" font-family="Inter, Arial, sans-serif" font-size="17">for browser-visible security risks.</text>
   <rect x="334" y="398" width="252" height="52" rx="9" fill="url(#accent)"/>
   <text x="389" y="431" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Scan This Site</text>
-  <text x="338" y="496" fill="#6b7890" font-family="Inter, Arial, sans-serif" font-size="12">SecureCheck - GitHub - Privacy - v1.0.0</text>
+  <text x="338" y="496" fill="#6b7890" font-family="Inter, Arial, sans-serif" font-size="12">SecureCheck - GitHub - Privacy - v1.2.0</text>
   <text x="98" y="604" fill="#56657a" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Initial state</text>
   <text x="198" y="604" fill="#718096" font-family="Inter, Arial, sans-serif" font-size="15">User starts a local scan from the active website tab.</text>
 </svg>

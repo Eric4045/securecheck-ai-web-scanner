@@ -87,7 +87,7 @@ const SENSITIVE_PATHS = [
     ref: 'OWASP A02'
   },
 
-  // ── Vibe Coder 常見問題 ──────────────────────────────────
+  // ── Common AI-built site 常見問題 ──────────────────────────────────
   {
     path: '/admin',
     id: 'admin-exposed',

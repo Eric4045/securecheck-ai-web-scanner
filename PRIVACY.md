@@ -1,12 +1,12 @@
-# SecureCheck Privacy Policy
+# SecureCheck AI Web Scanner Privacy Policy
 
 Last updated: June 3, 2026
 
-SecureCheck is a Chrome extension for scanning AI-built and vibe-coded websites for browser-visible security risks. This policy explains how the extension handles data.
+SecureCheck AI Web Scanner is a Chrome extension for scanning AI-built websites for browser-visible security risks. This policy explains how the extension handles data.
 
 ## Summary
 
-SecureCheck does not collect, sell, share, or transmit user data to the developer or to third parties.
+SecureCheck AI Web Scanner does not collect, sell, share, or transmit user data to the developer or to third parties.
 
 The extension runs locally in the browser. It does not operate a backend server, does not use analytics, does not serve ads, and does not include tracking pixels.
 

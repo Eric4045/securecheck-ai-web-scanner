@@ -1,7 +1,7 @@
 {
   "name": "securecheck-ai-web-scanner",
-  "version": "1.0.0",
-  "description": "Free open-source Chrome extension for scanning AI-built and vibe-coded websites.",
+  "version": "1.2.0",
+  "description": "Free open-source Chrome extension for scanning AI-built websites.",
   "private": false,
   "type": "module",
   "scripts": {
@@ -14,7 +14,6 @@
     "ai",
     "ai-coding",
     "ai-built-websites",
-    "vibe-coding",
     "frontend-security",
     "web-security",
     "codex",

@@ -1,7 +1,7 @@
 {
-  "appName": { "message": "SecureCheck — Website Security Scanner" },
+  "appName": { "message": "SecureCheck AI Web Scanner" },
   "appShortName": { "message": "SecureCheck" },
-  "appDescription": { "message": "Free scanner for AI-built and vibe-coded websites: find browser-visible risks and copy AI-ready fix prompts." },
+  "appDescription": { "message": "Free scanner for AI-built websites: find browser-visible security risks and copy AI-ready fix prompts." },
 
   "scanButton": { "message": "Scan This Site" },
   "scanning": { "message": "Scanning..." },

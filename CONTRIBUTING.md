@@ -1,8 +1,8 @@
-# Contributing To SecureCheck
+# Contributing To SecureCheck AI Web Scanner
 
-Thank you for helping improve SecureCheck.
+Thank you for helping improve SecureCheck AI Web Scanner.
 
-SecureCheck is intended for AI builders who need a lightweight, browser-based first pass over common website security mistakes. Contributions should keep the tool practical, privacy-preserving, and understandable for non-security specialists.
+SecureCheck AI Web Scanner is intended for AI builders who need a lightweight, browser-based first pass over common website security mistakes. Contributions should keep the tool practical, privacy-preserving, and understandable for non-security specialists.
 
 ## Good Contributions
 
@@ -69,4 +69,3 @@ When reporting a false positive, include:
 - Target-site framework or host if known
 - Why the finding is not actionable
 - A safer detection rule if you have one
-

@@ -1,7 +1,7 @@
 {
-  "appName": { "message": "SecureCheck — 網站安全掃描工具" },
+  "appName": { "message": "SecureCheck AI Web Scanner" },
   "appShortName": { "message": "SecureCheck" },
-  "appDescription": { "message": "專為 AI 製作與 vibe coding 網站設計的免費安全掃描器：找出瀏覽器可見風險，並複製 AI 可直接修復的指令。" },
+  "appDescription": { "message": "專為 AI 製作網站設計的免費安全掃描工具：找出瀏覽器可見安全風險，並複製 AI 可直接修復的指令。" },
 
   "scanButton": { "message": "掃描這個網站" },
   "scanning": { "message": "掃描中..." },

@@ -29,7 +29,7 @@ async function runDomScan() {
     { name: 'Private Key',        regex: /-----BEGIN (RSA |EC )?PRIVATE KEY-----/g,           severity: 'P0' },
     { name: 'Hardcoded Password', regex: /(password|passwd|pwd)\s*[:=]\s*["'][^"']{6,}["']/gi, severity: 'P1' },
     { name: 'Hardcoded Secret',   regex: /(secret|api_key|apikey|auth_token)\s*[:=]\s*["'][^"']{8,}["']/gi, severity: 'P1' },
-    // ── Vibe Coder 常見問題 ───────────────────────────────────
+    // ── Common AI-built site 常見問題 ───────────────────────────────────
     { name: 'Supabase Service Key', regex: /(supabase[_\-]?service[_\-]?(?:role[_\-]?)?key|service_role)\s*[:=]\s*["']?eyJ[a-zA-Z0-9\-_]{20,}/gi, severity: 'P0' },
     { name: 'NEXT_PUBLIC Secret',   regex: /NEXT_PUBLIC_(SECRET|PRIVATE_KEY|PASSWORD|JWT_SECRET|AUTH_SECRET|SERVICE_KEY)\s*[:=]\s*["'][^"']{6,}["']/gi, severity: 'P0' }
   ];

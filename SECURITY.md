@@ -1,6 +1,6 @@
 # Security Policy
 
-SecureCheck is a security-focused browser extension. Please report vulnerabilities responsibly.
+SecureCheck AI Web Scanner is a security-focused browser extension. Please report vulnerabilities responsibly.
 
 ## Scope
 

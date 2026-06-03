@@ -27,7 +27,7 @@ This checklist tracks whether SecureCheck is ready to submit as a Codex for Open
 
 ## Still Recommended Before Applying
 
-- [x] Rename the GitHub repository from `security-scanner` to `securecheck-ai-web-scanner`.
+- [x] Use the final public repository name `securecheck-ai-web-scanner`.
 - [ ] Add one example vulnerable fixture page per scanner category.
 - [ ] Add extension packaging instructions and a release zip workflow.
 - [ ] Enable GitHub Pages for the privacy policy if Chrome Web Store rejects the GitHub repository URL.

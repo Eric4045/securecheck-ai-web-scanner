@@ -4,7 +4,7 @@ These notes are for preparing SecureCheck for Chrome Web Store review.
 
 ## Single Purpose
 
-SecureCheck scans the currently active website for browser-visible security risks and generates copy-ready remediation prompts for AI coding assistants.
+SecureCheck AI Web Scanner scans the currently active website for browser-visible security risks and generates copy-ready remediation prompts for AI coding assistants.
 
 ## Privacy Policy URL
 
@@ -18,7 +18,7 @@ If GitHub Pages is enabled for that repository, use this cleaner URL instead:
 
 ## Data Disclosure Summary
 
-SecureCheck does not collect or transmit user data.
+SecureCheck AI Web Scanner does not collect or transmit user data.
 
 It processes the active tab URL, page content, same-origin JavaScript, HTTP headers, and cookie security attributes locally in the user's browser only after the user starts a scan.
 
@@ -65,13 +65,13 @@ Requested at scan time for the current site origin so SecureCheck can passively 
 Purpose:
 
 ```text
-SecureCheck scans the active website for browser-visible security risks and generates copy-ready remediation prompts for AI coding assistants.
+SecureCheck AI Web Scanner scans the active website for browser-visible security risks and generates copy-ready remediation prompts for AI coding assistants.
 ```
 
 Privacy disclosure:
 
 ```text
-SecureCheck does not collect or transmit user data. It processes the active tab URL, page content, same-origin JavaScript, HTTP headers, and cookie security attributes locally in the user's browser only to provide the scan. Cookie values are never read, and scan results are not persisted.
+SecureCheck AI Web Scanner does not collect or transmit user data. It processes the active tab URL, page content, same-origin JavaScript, HTTP headers, and cookie security attributes locally in the user's browser only to provide the scan. Cookie values are never read, and scan results are not persisted.
 ```
 
 Permission note:
@@ -84,8 +84,8 @@ The extension requests site permissions only when the user starts a scan, uses t
 
 - README with screenshots: <https://github.com/Eric4045/securecheck-ai-web-scanner>
 - Example scan report: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/example-report.md>
-- Release notes: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/release-notes/v1.0.0.md>
-- Release package: <https://github.com/Eric4045/securecheck-ai-web-scanner/releases/tag/v1.0.0>
+- Release notes: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/release-notes/v1.2.0.md>
+- Release package: <https://github.com/Eric4045/securecheck-ai-web-scanner/releases/tag/v1.2.0>
 - Privacy policy: <https://github.com/Eric4045/securecheck-privacy>
 
 ## Review Risk Areas To Watch

@@ -4,7 +4,7 @@ This is a fictional report for reviewers and contributors. It uses the reserved 
 
 ## Target
 
-- URL: `https://vibe-shop.example`
+- URL: `https://demo-app.example`
 - Context: AI-built storefront demo
 - Detected stack: `Vite, Netlify`
 - Security score: `56/100`
@@ -44,7 +44,7 @@ URGENT: My website has a secret-like API key exposed in frontend JavaScript sour
 Copy-ready AI fix prompt:
 
 ```text
-My website (https://vibe-shop.example) is missing a Content-Security-Policy header. Tech stack: Vite, Netlify. Please generate an appropriate CSP policy and show me exactly where to add it in my Netlify headers configuration.
+My website (https://demo-app.example) is missing a Content-Security-Policy header. Tech stack: Vite, Netlify. Please generate an appropriate CSP policy and show me exactly where to add it in my Netlify headers configuration.
 ```
 
 ### P1 Warning: Session cookie missing SameSite

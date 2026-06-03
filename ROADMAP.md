@@ -1,6 +1,6 @@
 # Roadmap
 
-SecureCheck is focused on helping AI builders find browser-visible security issues and turn them into actionable AI repair prompts.
+SecureCheck AI Web Scanner is focused on helping AI builders find browser-visible security issues and turn them into actionable AI repair prompts.
 
 ## Near Term
 
