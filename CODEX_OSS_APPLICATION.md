@@ -30,7 +30,7 @@ Codex would help maintain and expand SecureCheck by:
 
 - Improving scanner rules and reducing false positives.
 - Adding tests and vulnerable fixtures for detection logic.
-- Producing framework-specific remediation prompts for Next.js, Vite, Astro, Express, Vercel, Netlify, Render, Cloudflare Pages, Firebase, and Supabase.
+- Producing conservative, signal-based remediation prompts when reliable frontend framework, hosting, client SDK, or visible backend hints are detected.
 - Reviewing extension security, permission boundaries, and privacy behavior.
 - Maintaining bilingual English and Traditional Chinese documentation.
 - Creating example reports that teach AI builders how to fix common issues safely.
@@ -64,7 +64,7 @@ The immediate open-source roadmap is:
 - Add more screenshots, demo GIFs, and example scan reports.
 - Expand scanner fixture tests.
 - Add example vulnerable pages for common AI-built website mistakes.
-- Add more framework-specific fix prompts.
+- Add more conservative remediation prompts based on reliable browser-visible framework, hosting, and client SDK signals.
 - Improve Chrome Web Store packaging and review documentation.
 - Continue documenting the privacy model and passive-scan limitations.
 
@@ -78,8 +78,10 @@ The project can also become a public reference for safe AI-assisted remediation 
 
 SecureCheck is not a full penetration testing tool. It does not test backend authorization, business logic, dependency vulnerabilities, server-side validation, or database permissions. It is a first-pass browser-visible scanner focused on common mistakes and AI-assisted remediation.
 
+Some findings may be mitigated by backend controls, layered defenses, or deployment architecture that the extension cannot inspect. The project is intentionally focused on AI-built and early-stage websites, where builders benefit from conservative browser-visible guidance before shipping.
+
 The project still needs stronger public proof of usefulness, such as outside contributors, user feedback, Chrome Web Store usage, and more reproducible vulnerable fixtures.
 
 ## Application Answer Snippet
 
-I am applying for support because SecureCheck is an open-source security tool for the AI coding ecosystem. It helps people who build websites with AI detect common browser-visible security risks and then copy targeted remediation prompts into an AI coding assistant such as Codex. With Codex access, I can improve scanner accuracy, add tests and fixtures, expand framework-specific remediation prompts, and make the project more useful for the growing number of AI builders shipping web apps without a security background.
+I am applying for support because SecureCheck is an open-source security tool for the AI coding ecosystem. It helps people who build websites with AI detect common browser-visible security risks and then copy targeted remediation prompts into an AI coding assistant such as Codex. With Codex access, I can improve scanner accuracy, add tests and fixtures, expand conservative signal-based remediation prompts, and make the project more useful for the growing number of AI builders shipping web apps without a security background.

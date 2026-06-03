@@ -21,7 +21,7 @@ When the user clicks "Scan This Site", SecureCheck AI Web Scanner may process th
 - Publicly reachable same-origin paths used for passive exposed-file checks.
 - Cookie names and cookie security attributes such as `HttpOnly`, `Secure`, and `SameSite`.
 
-Cookie values are never read, displayed, stored, or transmitted.
+Cookie values are not displayed, stored, transmitted, or used in scan findings.
 
 ## Purpose
 
@@ -63,7 +63,7 @@ SecureCheck AI Web Scanner's use and transfer of information received from Chrom
 
 ## Security
 
-SecureCheck AI Web Scanner masks detected secret-like values before showing them in the UI. It avoids reading cookie values and avoids persistent storage of scan findings.
+SecureCheck AI Web Scanner masks detected secret-like values before showing them in the UI. It does not use cookie values in scan findings and avoids persistent storage of scan findings.
 
 ## Changes
 

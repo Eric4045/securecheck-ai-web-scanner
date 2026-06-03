@@ -6,7 +6,7 @@ SecureCheck AI Web Scanner is focused on helping AI builders find browser-visibl
 
 - Add fixture-based regression tests for every scanner category.
 - Add example vulnerable pages for `.env`, exposed admin routes, unsafe DOM insertion, frontend secrets, insecure cookies, and missing headers.
-- Improve framework and hosting detection for Next.js, Vite, Astro, Express, Vercel, Netlify, Render, Cloudflare Pages, Firebase, and Supabase.
+- Improve reliable browser-visible signal detection for frontend frameworks, hosting platforms, client SDKs, and visible backend hints.
 - Add screenshots and example scan reports for the README.
 - Add extension packaging and release instructions.
 
@@ -20,7 +20,8 @@ SecureCheck AI Web Scanner is focused on helping AI builders find browser-visibl
 
 ## AI Remediation
 
-- Generate framework-specific prompts when hosting or framework signals are detected.
+- Generate conservative signal-based prompts when reliable frontend framework, hosting, or client SDK signals are detected.
+- Clearly mark cases where a finding may be mitigated by backend controls or other defenses that SecureCheck cannot verify from the browser.
 - Add a compact prompt mode for Codex and other coding agents.
 - Add a "review this fix" prompt after the user applies a patch.
 - Add safer remediation warnings for findings that require human verification.

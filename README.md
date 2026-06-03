@@ -37,6 +37,8 @@ SecureCheck gives those builders a practical first-pass security review before t
 
 SecureCheck does not replace a professional security audit. It focuses on passive checks that can be performed from the browser without backend credentials, form submission, fuzzing, brute force, or state-changing requests.
 
+Findings should be treated as browser-visible signals, not proof that the full application is vulnerable. Some mature sites may intentionally mitigate a flagged frontend pattern with backend controls, layered defenses, or deployment architecture that a browser extension cannot verify.
+
 ## Core Features
 
 - Live-site scan from the active browser tab.
@@ -57,7 +59,7 @@ SecureCheck is designed to be privacy-preserving:
 - The extension does not run a backend service.
 - The extension does not use analytics, ads, tracking pixels, or telemetry.
 - Scan data is not sold, shared, or transferred to third parties.
-- Cookie checks read cookie names and security attributes only. Cookie values are never read or reported.
+- Cookie checks use cookie names and security attributes only. Cookie values are not displayed, stored, or transmitted.
 - Detected secrets are masked before they are shown in the UI.
 - Network requests are sent only to the website being scanned.
 - Site permissions are requested at scan time and removed after the scan finishes.
@@ -157,13 +159,15 @@ npm test
 
 SecureCheck is built for the AI coding ecosystem. It helps people who create websites with AI tools find preventable security mistakes and turn those findings into clear instructions for coding agents.
 
-Good contributions include scanner rules, false-positive fixes, vulnerable fixtures, framework-specific remediation prompts, extension-permission hardening, documentation, and bilingual copy improvements.
+Good contributions include scanner rules, false-positive fixes, vulnerable fixtures, signal-based remediation prompts for frontend frameworks and hosting platforms, extension-permission hardening, documentation, and bilingual copy improvements.
 
 For Codex for Open Source reviewers, see [CODEX_OSS_APPLICATION.md](CODEX_OSS_APPLICATION.md).
 
 ## Limitations
 
 SecureCheck can only detect risks visible from the browser. It cannot prove that backend authorization, business logic, database access control, server-side validation, dependency security, or production infrastructure are correct.
+
+SecureCheck is optimized for AI-built and early-stage websites where builders may not yet know which frontend and deployment-security signals to review. It is not meant to judge mature professional sites as definitively insecure when they may have compensating controls that are not visible to the browser.
 
 Use SecureCheck as an early safety pass, not as a complete penetration test.
 

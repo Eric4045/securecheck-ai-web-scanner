@@ -30,7 +30,7 @@ The extension does not:
 - Use tracking pixels.
 - Send scan results to the developer.
 - Send scan results to any AI provider.
-- Read or transmit cookie values.
+- Display, store, or transmit cookie values.
 - Persist scan results in extension storage.
 - Sell or share user data.
 
@@ -54,7 +54,7 @@ Used only to remember local UI preferences such as language. Scan results are no
 
 ### Optional `cookies`
 
-Requested at scan time to inspect cookie names and security attributes for the scanned site. Cookie values are never read or reported.
+Requested at scan time to inspect cookie names and security attributes for the scanned site. Cookie values are not displayed, stored, transmitted, or used in scan findings.
 
 ### Optional host permissions
 
@@ -71,7 +71,7 @@ SecureCheck AI Web Scanner scans the active website for browser-visible security
 Privacy disclosure:
 
 ```text
-SecureCheck AI Web Scanner does not collect or transmit user data. It processes the active tab URL, page content, same-origin JavaScript, HTTP headers, and cookie security attributes locally in the user's browser only to provide the scan. Cookie values are never read, and scan results are not persisted.
+SecureCheck AI Web Scanner does not collect or transmit user data. It processes the active tab URL, page content, same-origin JavaScript, HTTP headers, and cookie security attributes locally in the user's browser only to provide the scan. Cookie values are not displayed, stored, transmitted, or used in scan findings, and scan results are not persisted.
 ```
 
 Permission note:
@@ -93,7 +93,7 @@ The extension requests site permissions only when the user starts a scan, uses t
 - Keep all scan behavior passive.
 - Do not add analytics without updating the privacy policy and dashboard disclosure.
 - Do not send scan results to AI services automatically.
-- Do not read cookie values.
+- Do not display, store, or transmit cookie values.
 - Do not persist scan results.
 - Do not add remote code.
 - Keep the privacy policy, manifest permissions, and dashboard disclosures consistent.
