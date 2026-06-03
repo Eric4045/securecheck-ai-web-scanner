@@ -10,11 +10,11 @@ SecureCheck AI Web Scanner scans the currently active website for browser-visibl
 
 Use this public privacy policy URL in the Chrome Web Store Developer Dashboard:
 
-`https://github.com/Eric4045/securecheck-privacy`
-
-If GitHub Pages is enabled for that repository, use this cleaner URL instead:
-
 `https://eric4045.github.io/securecheck-privacy/`
+
+Repository fallback:
+
+`https://github.com/Eric4045/securecheck-privacy`
 
 ## Data Disclosure Summary
 
@@ -86,7 +86,7 @@ The extension requests site permissions only when the user starts a scan, uses t
 - Example scan report: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/example-report.md>
 - Release notes: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/release-notes/v1.2.0.md>
 - Release package: <https://github.com/Eric4045/securecheck-ai-web-scanner/releases/tag/v1.2.0>
-- Privacy policy: <https://github.com/Eric4045/securecheck-privacy>
+- Privacy policy: <https://eric4045.github.io/securecheck-privacy/>
 
 ## Review Risk Areas To Watch
 

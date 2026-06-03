@@ -63,7 +63,7 @@ SecureCheck is designed to be privacy-preserving:
 - Site permissions are requested at scan time and removed after the scan finishes.
 - The scanner is passive and does not modify the target site.
 
-Privacy policy: <https://github.com/Eric4045/securecheck-privacy>
+Privacy policy: <https://eric4045.github.io/securecheck-privacy/>
 
 Chrome Web Store submission notes are in [CHROME_WEB_STORE_SUBMISSION.md](CHROME_WEB_STORE_SUBMISSION.md).
 
