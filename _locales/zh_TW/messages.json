@@ -1,0 +1,34 @@
+{
+  "appName": { "message": "SecureCheck — 網站安全掃描工具" },
+  "appShortName": { "message": "SecureCheck" },
+  "appDescription": { "message": "專為 AI 製作與 vibe coding 網站設計的免費安全掃描器：找出瀏覽器可見風險，並複製 AI 可直接修復的指令。" },
+
+  "scanButton": { "message": "掃描這個網站" },
+  "scanning": { "message": "掃描中..." },
+  "rescan": { "message": "重新掃描" },
+  "score": { "message": "安全評分" },
+  "noIssues": { "message": "未發現問題" },
+  "issuesFound": { "message": "個問題" },
+  "learnMore": { "message": "了解更多" },
+  "getFixInstruction": { "message": "生成修復指令" },
+  "copyPrompt": { "message": "複製 AI 指令" },
+  "copied": { "message": "已複製！" },
+
+  "severityP0": { "message": "高危" },
+  "severityP1": { "message": "中危" },
+  "severityP2": { "message": "建議" },
+
+  "scoreGood": { "message": "良好" },
+  "scoreWarning": { "message": "需改善" },
+  "scoreDanger": { "message": "危險" },
+  "scoreCritical": { "message": "嚴重風險" },
+
+  "coverageNote": { "message": "執行 $1 項可從瀏覽器被動偵測、對應 OWASP/CWE 的安全檢查。後端邏輯漏洞需要原始碼審查。" },
+  "cannotScan": { "message": "無法掃描此頁面，請開啟一個網站後再試。" },
+  "httpsOnly": { "message": "建議掃描已部署的正式版網站以獲得最準確結果。" },
+
+  "catHeaders": { "message": "HTTP 安全標頭" },
+  "catEndpoints": { "message": "敏感檔案與端點" },
+  "catCookies": { "message": "Cookie 安全性" },
+  "catDom": { "message": "原始碼與 DOM" }
+}

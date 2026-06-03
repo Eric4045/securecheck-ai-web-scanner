@@ -1,0 +1,29 @@
+.DS_Store
+
+# Local secrets and environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Packaged extension artifacts
+*.zip
+*.crx
+dist/
+build/
+release/
+releases/
+
+# Logs and local caches
+*.log
+.cache/
+tmp/
+temp/
+
+# OS/editor files
+Thumbs.db
+.vscode/
+.idea/
+

@@ -1,0 +1,22 @@
+{
+  "name": "securecheck-ai-web-scanner",
+  "version": "1.1.0",
+  "description": "Free open-source Chrome extension for scanning AI-built and vibe-coded websites.",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/scanner-tests.mjs",
+    "check": "node --check background.js && node --check popup/popup.js && node --check scanner/headerScanner.js && node --check scanner/endpointScanner.js && node --check scanner/cookieScanner.js && node --check scanner/domScanner.js"
+  },
+  "keywords": [
+    "security",
+    "chrome-extension",
+    "ai",
+    "ai-built-websites",
+    "vibe-coding",
+    "frontend-security",
+    "owasp"
+  ],
+  "author": "SecureCheck contributors",
+  "license": "MIT"
+}

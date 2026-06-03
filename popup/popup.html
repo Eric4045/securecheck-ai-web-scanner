@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 安全：禁止載入任何外部資源 -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:;">
+  <title>SecureCheck</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<!-- ── Splash Screen ── -->
+<div id="splash-screen">
+  <div class="sp-content">
+    <div class="sp-tagline-wrap">
+      <span class="sp-line1">Vibe Coded?</span>
+      <span class="sp-line2">Now secure it.</span>
+    </div>
+    <div class="sp-subtitle">Scan your AI-built site for vulnerabilities.</div>
+    <div class="sp-bar-wrap"><div class="sp-bar" id="sp-bar"></div></div>
+  </div>
+</div>
+
+  <div id="app">
+
+    <!-- 頂部標題列 -->
+    <header class="header">
+      <div class="logo">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="34" height="34">
+          <defs>
+            <linearGradient id="hdr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1e2438"/>
+              <stop offset="100%" stop-color="#0d0f18"/>
+            </linearGradient>
+            <linearGradient id="hdr-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#6e7de8" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#c0caff" stop-opacity="1"/>
+              <stop offset="100%" stop-color="#6e7de8" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="hdr-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#aab4ff"/>
+              <stop offset="100%" stop-color="#7c87e8"/>
+            </linearGradient>
+            <clipPath id="hdr-clip">
+              <path d="M50 8 L84 22 L84 52 C84 72 68 86 50 94 C32 86 16 72 16 52 L16 22 Z"/>
+            </clipPath>
+          </defs>
+          <path d="M50 8 L84 22 L84 52 C84 72 68 86 50 94 C32 86 16 72 16 52 L16 22 Z"
+                fill="url(#hdr-bg)" stroke="url(#hdr-stroke)" stroke-width="2.5"/>
+          <g clip-path="url(#hdr-clip)">
+            <line x1="16" y1="38" x2="84" y2="38" stroke="#8b96f0" stroke-width="1" stroke-opacity="0.5"/>
+            <line x1="16" y1="46" x2="84" y2="46" stroke="#8b96f0" stroke-width="1" stroke-opacity="0.4"/>
+            <line x1="16" y1="54" x2="84" y2="54" stroke="#8b96f0" stroke-width="1" stroke-opacity="0.5"/>
+            <line x1="16" y1="62" x2="84" y2="62" stroke="#8b96f0" stroke-width="1" stroke-opacity="0.35"/>
+            <rect x="16" y="48.5" width="68" height="4" fill="url(#hdr-beam)" rx="2"/>
+          </g>
+          <path d="M26 30 L26 37 L33 37" stroke="#b0bcff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M74 30 L74 37 L67 37" stroke="#b0bcff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="50" cy="50" r="3" fill="#c0c8ff"/>
+        </svg>
+        <div class="logo-text-wrap">
+          <span class="logo-text">SecureCheck</span>
+          <span class="logo-tagline">For Vibe Coding</span>
+        </div>
+      </div>
+      <div id="lang-toggle" class="lang-toggle" role="button" tabindex="0" aria-label="Toggle language">EN / 中</div>
+    </header>
+
+    <!-- 掃描前：初始畫面 -->
+    <div id="view-initial" class="view active">
+      <div class="initial-content">
+        <div class="site-url" id="current-url-display"></div>
+        <p class="initial-desc" id="initial-desc">Scan your live website for security vulnerabilities.</p>
+        <button id="scan-btn" class="btn-primary">
+          <span id="scan-btn-text">Scan This Site</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 掃描中：loading 畫面 -->
+    <div id="view-scanning" class="view">
+      <div class="scanning-content">
+
+        <!-- 盾牌動畫區 -->
+        <div class="scan-animation">
+          <div class="scan-pulse"></div>
+          <div class="scan-ring"></div>
+          <div class="scan-ring-inner"></div>
+          <div class="scan-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="36" height="36">
+              <defs>
+                <linearGradient id="sc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1e2235"/>
+                  <stop offset="100%" stop-color="#0d0f14"/>
+                </linearGradient>
+                <linearGradient id="sc-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#5e6ad2" stop-opacity="0"/>
+                  <stop offset="50%" stop-color="#8b96f0" stop-opacity="1"/>
+                  <stop offset="100%" stop-color="#5e6ad2" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="sc-str" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8b96f0"/>
+                  <stop offset="100%" stop-color="#5e6ad2"/>
+                </linearGradient>
+                <clipPath id="sc-clip">
+                  <path d="M50 8 L84 22 L84 52 C84 72 68 86 50 94 C32 86 16 72 16 52 L16 22 Z"/>
+                </clipPath>
+              </defs>
+              <path d="M50 8 L84 22 L84 52 C84 72 68 86 50 94 C32 86 16 72 16 52 L16 22 Z"
+                    fill="url(#sc-bg)" stroke="url(#sc-str)" stroke-width="2"/>
+              <g clip-path="url(#sc-clip)">
+                <line x1="16" y1="36" x2="84" y2="36" stroke="#5e6ad2" stroke-width="1" stroke-opacity="0.25"/>
+                <line x1="16" y1="44" x2="84" y2="44" stroke="#5e6ad2" stroke-width="1" stroke-opacity="0.2"/>
+                <line x1="16" y1="52" x2="84" y2="52" stroke="#5e6ad2" stroke-width="1" stroke-opacity="0.25"/>
+                <line x1="16" y1="60" x2="84" y2="60" stroke="#5e6ad2" stroke-width="1" stroke-opacity="0.2"/>
+                <line x1="16" y1="68" x2="84" y2="68" stroke="#5e6ad2" stroke-width="1" stroke-opacity="0.15"/>
+                <rect x="16" y="49" width="68" height="4" fill="url(#sc-beam)" rx="2" class="scan-beam-anim"/>
+              </g>
+              <path d="M26 28 L26 36 L34 36" stroke="#7c87e8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M74 28 L74 36 L66 36" stroke="#7c87e8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="50" cy="51" r="2.5" fill="#7c87e8"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 掃描標題 -->
+        <div class="scanning-headline">
+          <p class="scanning-text" id="scanning-text">Scanning...</p>
+          <div class="scan-dots">
+            <div class="scan-dot"></div>
+            <div class="scan-dot"></div>
+            <div class="scan-dot"></div>
+          </div>
+        </div>
+
+        <!-- 進度清單 -->
+        <div class="scan-progress">
+          <div class="progress-item" id="prog-headers">Checking headers</div>
+          <div class="progress-item" id="prog-endpoints">Checking exposed files</div>
+          <div class="progress-item" id="prog-cookies">Checking cookies</div>
+          <div class="progress-item" id="prog-dom">Scanning source code</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 結果畫面 -->
+    <div id="view-result" class="view">
+
+      <!-- 評分區塊 -->
+      <div class="score-section">
+        <div class="score-circles-row">
+          <!-- 技術安全分數 -->
+          <div class="score-col">
+            <div class="score-circle-wrap">
+              <div class="score-glow" id="score-glow"></div>
+              <svg class="score-ring" viewBox="0 0 84 84">
+                <circle class="score-ring-bg" cx="42" cy="42" r="38"/>
+                <circle class="score-ring-fill" id="score-ring-fill" cx="42" cy="42" r="38"/>
+              </svg>
+              <div class="score-number-wrap">
+                <span class="score-number" id="score-number">--</span>
+              </div>
+            </div>
+            <div class="score-col-label" id="score-label">Security Score</div>
+            <div class="score-col-status" id="score-status"></div>
+          </div>
+          <div class="score-divider"></div>
+          <!-- 合規風險分數 -->
+          <div class="score-col">
+            <div class="score-circle-wrap">
+              <div class="score-glow" id="compliance-glow"></div>
+              <svg class="score-ring" viewBox="0 0 84 84">
+                <circle class="score-ring-bg" cx="42" cy="42" r="38"/>
+                <circle class="score-ring-fill" id="compliance-ring-fill" cx="42" cy="42" r="38"/>
+              </svg>
+              <div class="score-number-wrap">
+                <span class="score-number" id="compliance-number">--</span>
+              </div>
+            </div>
+            <div class="score-col-label" id="compliance-label">Compliance Risk</div>
+            <div class="score-col-status" id="compliance-status"></div>
+          </div>
+        </div>
+        <div class="score-tech" id="score-tech"></div>
+      </div>
+
+      <!-- 問題摘要 -->
+      <div class="summary-bar" id="summary-bar"></div>
+
+      <!-- 一鍵複製全部給 AI -->
+      <div class="copy-all-wrap" id="copy-all-wrap" style="display:none">
+        <button class="copy-all-btn" id="copy-all-btn">
+          <span class="copy-all-icon">✦</span>
+          <span id="copy-all-text">Copy All Issues for AI</span>
+        </button>
+      </div>
+
+      <!-- 問題清單 -->
+      <div class="issues-list" id="issues-list"></div>
+
+      <!-- 底部說明 -->
+      <div class="coverage-note" id="coverage-note"></div>
+
+      <!-- 重新掃描 -->
+      <button id="rescan-btn" class="btn-secondary">Scan Again</button>
+    </div>
+
+    <!-- 無法掃描 -->
+    <div id="view-error" class="view">
+      <div class="error-content">
+        <div class="error-icon">⚠️</div>
+        <p class="error-msg" id="error-msg">Cannot scan this page.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 品牌浮水印：固定在底部，所有畫面都看得到 -->
+  <div class="brand-watermark">
+    <span class="brand-watermark-text">SecureCheck</span>
+    <span class="brand-watermark-sep">·</span>
+    <a class="brand-watermark-link" id="brand-link" href="https://github.com/Eric4045/securecheck-ai-web-scanner" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <span class="brand-watermark-sep">·</span>
+    <a class="brand-watermark-link" href="https://github.com/Eric4045/securecheck-privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+    <span class="brand-watermark-sep">·</span>
+    <span class="brand-watermark-version">v1.1.0</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

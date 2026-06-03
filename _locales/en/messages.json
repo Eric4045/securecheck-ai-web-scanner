@@ -1,0 +1,34 @@
+{
+  "appName": { "message": "SecureCheck — Website Security Scanner" },
+  "appShortName": { "message": "SecureCheck" },
+  "appDescription": { "message": "Free scanner for AI-built and vibe-coded websites: find browser-visible risks and copy AI-ready fix prompts." },
+
+  "scanButton": { "message": "Scan This Site" },
+  "scanning": { "message": "Scanning..." },
+  "rescan": { "message": "Scan Again" },
+  "score": { "message": "Security Score" },
+  "noIssues": { "message": "No issues found" },
+  "issuesFound": { "message": "issues found" },
+  "learnMore": { "message": "Learn more" },
+  "getFixInstruction": { "message": "Get Fix Instruction" },
+  "copyPrompt": { "message": "Copy AI Prompt" },
+  "copied": { "message": "Copied!" },
+
+  "severityP0": { "message": "Critical" },
+  "severityP1": { "message": "Warning" },
+  "severityP2": { "message": "Advisory" },
+
+  "scoreGood": { "message": "Good" },
+  "scoreWarning": { "message": "Needs Improvement" },
+  "scoreDanger": { "message": "Dangerous" },
+  "scoreCritical": { "message": "Critical Risk" },
+
+  "coverageNote": { "message": "Runs $1 passive browser-visible checks mapped to OWASP/CWE. Backend logic vulnerabilities require code review." },
+  "cannotScan": { "message": "Cannot scan this page. Please open a website and try again." },
+  "httpsOnly": { "message": "For best results, scan the live deployed version of your site." },
+
+  "catHeaders": { "message": "HTTP Security Headers" },
+  "catEndpoints": { "message": "Exposed Files & Endpoints" },
+  "catCookies": { "message": "Cookie Security" },
+  "catDom": { "message": "Source Code & DOM" }
+}
