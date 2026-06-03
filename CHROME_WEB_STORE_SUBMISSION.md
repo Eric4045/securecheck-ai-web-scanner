@@ -85,6 +85,7 @@ The extension requests site permissions only when the user starts a scan, uses t
 - README with screenshots: <https://github.com/Eric4045/securecheck-ai-web-scanner>
 - Example scan report: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/example-report.md>
 - Release notes: <https://github.com/Eric4045/securecheck-ai-web-scanner/blob/main/docs/release-notes/v1.0.0.md>
+- Release package: <https://github.com/Eric4045/securecheck-ai-web-scanner/releases/tag/v1.0.0>
 - Privacy policy: <https://github.com/Eric4045/securecheck-privacy>
 
 ## Review Risk Areas To Watch

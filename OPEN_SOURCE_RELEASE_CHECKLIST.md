@@ -21,7 +21,7 @@ This checklist tracks whether SecureCheck is ready to submit as a Codex for Open
 - [x] Add demo screenshots for scan start, progress, results, and copy-prompt workflow.
 - [x] Add one example scan report using fictional `.example` data.
 - [x] Add release notes for the first public OSS release.
-- [x] Publish a GitHub release tag for the first public OSS release.
+- [x] Publish a GitHub release tag with a packaged extension zip asset.
 - [x] Confirm no secrets, private API tokens, customer data, or unreleased sensitive data are committed.
 - [x] Ignore `.DS_Store`, packaged extension zips, build artifacts, and local secrets.
 
